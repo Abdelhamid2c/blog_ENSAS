@@ -44,8 +44,8 @@ Route::get('categories/category/{category}', [App\Http\Controllers\categories\Ca
 
 
 
-    Route::post('users/update/{id}', [App\Http\Controllers\Users\UsersController::class, 'updateprofile'])->name('users.update');
-    Route::get('users/edit/{id}', [App\Http\Controllers\Users\UsersController::class, 'editProfile'])->name('users.edit');
-    Route::get('users/profile/{id}', [App\Http\Controllers\Users\UsersController::class, 'Profile'])->name('users.profile');
-  
+Route::post('users/update/{id}', [App\Http\Controllers\Users\UsersController::class, 'updateprofile'])->name('users.update');
+Route::get('users/edit/{id}', [App\Http\Controllers\Users\UsersController::class, 'editProfile'])->name('users.edit');
+Route::get('users/profile/{id}', [App\Http\Controllers\Users\UsersController::class, 'Profile'])->name('users.profile');
+
 
